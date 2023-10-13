@@ -1,0 +1,20 @@
+:root {
+  font-family: 'Consolas', 'Liberation Mono', 'Courier', 'monospace';
+  color: white;
+  background-color: black;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  width: 10%;
+}
+
+.logo:hover {
+  border: 1px solid lightskyblue;
+  border-radius: 10%;
+  padding: 5px;
+}
