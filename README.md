@@ -1,5 +1,5 @@
 
-# Entregable-Bios-React
+# Frontend-GitHubSearcher-Bios
 En este proyecto se implementó una Web que simularia un buscador de GitHub para un entregable de la carrera Desarrollador Full Stack de BIOS.
 
 ## Consigna
