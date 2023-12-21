@@ -92,7 +92,7 @@ const Presentation = () => {
             >
               Get started
             </Button>
-            <CardContent sx={{ display: "flex", justifyContent: "center" }}>
+            <CardContent sx={{ display: "flex", justifyContent: "start" }}>
               <a href="https://github.com/" target="blank">
                 <i
                   className="fa-brands fa-square-github fa-spin fa-10x"

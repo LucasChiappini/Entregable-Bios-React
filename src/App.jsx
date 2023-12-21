@@ -4,6 +4,7 @@ import UserSearch from "./pages/UserSearch";
 import RepositoriesSearch from "./pages/RepositoriesSearch";
 import UserDetails from "./pages/UserDetails";
 import RepositoryDetails from "./pages/RepositoryDetails";
+import Crud from "./pages/Crud";
 const App = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const App = () => {
             path="/RepositoriesSearch/RepositoryDetails/:id/:name/:language/:date"
             element={<RepositoryDetails />}
           ></Route>
+          <Route path="/Management" element={<Crud />}></Route>
         </Routes>
       </BrowserRouter>
     </>

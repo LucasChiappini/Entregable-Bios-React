@@ -19,7 +19,7 @@ const RepositoryDetails = () => {
     let convertedDate = `${year}-${month}-${day}`;
     try {
       const response = await axios.get(
-        `https://api.github.com/search/repositories?q=${name}+language:${language}+created:>=${convertedDate}`,
+        `http://localhost:9000/api/repos/${name}/${language}/${convertedDate}`,
         {
           headers: {
             Authorization: `5ce7a0bd8ce46057b31d`,

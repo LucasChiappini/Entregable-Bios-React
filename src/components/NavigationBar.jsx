@@ -21,9 +21,16 @@ const NavigationBar = () => {
     navigate("/RepositoriesSearch");
   };
 
+  const handleclickCrud = () => {
+    navigate("/Management");
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ borderBottom: 1, borderColor:"#30363D" }}>
+      <AppBar
+        position="static"
+        sx={{ borderBottom: 1, borderColor: "#30363D" }}
+      >
         <Toolbar>
           <MenuItem sx={{ gap: "5px" }}>
             <Button
@@ -40,6 +47,10 @@ const NavigationBar = () => {
             </Button>
             <Button color="inherit" onClick={handleclickRepositories}>
               Repositories
+            </Button>
+
+            <Button color="inherit" onClick={handleclickCrud}>
+              Management
             </Button>
           </MenuItem>
         </Toolbar>

@@ -23,7 +23,7 @@ const RepostioriesSearch = () => {
 
     try {
       const response = await axios.get(
-        `https://api.github.com/search/repositories?q=${newInputValue}+language:${newLanguage}+created:>=${convertedDate}`,
+        `http://localhost:9000/api/repos/${newInputValue}/${newLanguage}/${convertedDate}`,
         {
           headers: {
             Authorization: `5ce7a0bd8ce46057b31d`,

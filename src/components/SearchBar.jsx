@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -138,7 +139,7 @@ const SearchBar = ({ add, type }) => {
               <GitHub />
             </IconButton>
             <Box>
-              <Typography >Languages➡️</Typography>
+              <Typography>Languages➡️</Typography>
             </Box>
             <Box
               sx={{
@@ -149,10 +150,7 @@ const SearchBar = ({ add, type }) => {
               }}
             >
               <FormControl fullWidth>
-                <InputLabel
-                  id="iSelectLanguages"
-                  sx={{ color: "#fff" }}
-                >
+                <InputLabel id="iSelectLanguages" sx={{ color: "#fff" }}>
                   <ArrowDropDownIcon />
                 </InputLabel>
                 <Select
@@ -225,6 +223,11 @@ const SearchBar = ({ add, type }) => {
     } else if (type == "repository") {
       return getSearchBarRepository();
     }
+  };
+
+  SearchBar.propTypes = {
+    add: PropTypes.func.isRequired,
+    type: PropTypes.oneOf(["user", "repository"]).isRequired,
   };
 
   return <Box component="div">{SearchBarSelected()}</Box>;

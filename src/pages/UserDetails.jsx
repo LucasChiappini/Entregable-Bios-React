@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 
 const UserDetails = () => {
   const { id } = useParams();
-  const {login} =useParams()
+  const {login} =useParams();
   const [data, setData] = useState([]);
   const [specificData,setSpecificData]= useState([]);
  
@@ -15,7 +15,7 @@ const UserDetails = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `https://api.github.com/search/users?q=${login}`,
+        `http://localhost:9000/api/users/${login}`,
         {
           headers: {
             Authorization: `5ce7a0bd8ce46057b31d`,
